@@ -1,14 +1,23 @@
 
 #header h1 {
-	font-family: 'Alegreya', serif;
-	font-size: 400%;
+	font-family: 'Kameron', serif;
+	font-size: 480%;
 	margin: 20px 0px 4px 0px;
 	padding: 0px 0px;
+	color: black;
+} 
+
+#header h1 a {
+    color: black;
+}
+
+#header h1 a:hover {
+    text-decoration: none;
 } 
 
 #header h2 {
-	font-family: 'Alegreya', serif;
-	font-size: 180%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 120%;
 	font-weight: normal;
 	margin: 0px 0px;
 	padding: 0px 0px;
@@ -16,6 +25,19 @@
 
 #header {
 	margin-bottom: 10px;
+}
+
+#main h2 {
+    font-size: 200%;
+    font-weight: bold;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#main .box {
+    border: 1px solid #EEEEEE;
+    padding: 10px 0px;
+    margin-bottom: 20px;
 }
 
 .right {
@@ -26,40 +48,19 @@
 	text-align: center;
 }
 
-div#menu ul {
-	list-style: none;
-	margin: 0px;
+.pad_l {
+    padding-left: 10px;
 }
 
-div#menu li a {
-	border: 1px solid #F5F5F5;
-	background-color: #E5E5E5;
-	color: #666666;
-	padding: 2px 4px;
-	margin: 2px 0px;
-	display: inline-block;
-	width: 100%;
-}
-
-div#menu li a:hover {
-	background-color: #D0D0D0;
-	color: #666666;
-	text-decoration: none;
-}
-
-div#menu li.title {
-	font-weight: bold; 
-}
-
-div#content p {
-	text-align: justify;
+.pad_r {
+    padding-right: 10px;
 }
 
 footer a {
-	color: gray;
+	color: #333333;
 }
 
 footer a:hover {
 	text-decoration: none;
-	color: #666666;
+	color: #000000;
 }

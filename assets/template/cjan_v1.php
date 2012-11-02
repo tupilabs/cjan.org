@@ -13,11 +13,12 @@
     <link href="{base_url}assets/css/bootstrap.css" rel="stylesheet">
     <link href="{base_url}assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{base_url}assets/css/cjan.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Alegreya:900,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
-    
+
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-28429437-1']);
+      _gaq.push(['_setAccount', 'UA-30878265-1']);
+      _gaq.push(['_setDomainName', 'cjan.org']);
       _gaq.push(['_trackPageview']);
     
       (function() {
@@ -29,25 +30,33 @@
     </script>
 </head>
 
-<body class="home">
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <h1><a href='{base_url}' title='CJAN Home'>CJAN</a></h1>
+<body class='home'>
+    <header id='header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='span12'>
+                    <h1><a href='{base_url}' title='Home'>CJAN</a></h1>
                     <h2 class=''>Comprehensive Java Archive Network</h2>
                 </div>
             </div>
         </div>
     </header>
-    <section id="main">
+    <section id='menu'>
+        <div class='container'>
+            <div class='row'>
+                <div class='span12'>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='main'>
         <div class='container'>
             <div class='row'>
                 {content_for_layout}
             </div>
         </div>
     </section>
-    <hr/>
     <footer>
         <div class='container'>
             <div class='row'>

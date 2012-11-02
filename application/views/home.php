@@ -1,4 +1,24 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<div class='span8'>
+    <div class='box'>
+        <div class='pad_l pad_r'>
+            <h2>Latest tests</h2>
+            <p></p>
+        </div>
+    </div>
+</div>
 
-?>
-<h2>Home</h2>
+<div class='span4'>
+    <div class='box'>
+        <div class='pad_l pad_r'>
+            <h2>News</h2>
+            <p></p>
+        </div>
+    </div>
+    
+    <div class='box'>
+        <div class='pad_l pad_r'>
+            <h2>Tools</h2>
+            <p></p>
+        </div>
+    </div>
+</div>
