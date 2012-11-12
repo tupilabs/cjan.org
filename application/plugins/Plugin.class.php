@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Plugin {
+abstract class Plugin {
     
     public function __construct() {
         $this->register();

@@ -11,7 +11,7 @@
     <div class='box'>
         <div class='pad_l pad_r'>
             <h2>News</h2>
-            <p></p>
+            <p><?php if(isset($message)) echo $message ?></p>
         </div>
     </div>
     

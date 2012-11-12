@@ -29,7 +29,7 @@ class PluginManager {
     public function load() {
         log_message('info', 'Loading plug-ins');
         $plugins = $this->cache->get('plugins');
-        if($plugins === FALSE) {
+        if(TRUE OR $plugins === FALSE) {
             log_message('debug', 'Loading plug-ins from database');
             $this->CI->load->model('plugins_model');
             $plugins_from_db = $this->CI->plugins_model->get_all();
@@ -44,10 +44,16 @@ class PluginManager {
                 
                 $plugin_entry_point = get_plugin_entry_point($plugin_home, $plugin->name);
                 
-                if($plugin_entry_point === FALSE)
+                if($plugin_entry_point === FALSE) {
                     log_message('error', "Failed to load plug-in $plugin->name");
-                else
-                    $plugins[$plugin->name] = $plugin_entry_point;
+                } else {
+                    $plugin_entry_point = FCPATH . $plugin_entry_point;
+                    include_once "$plugin_entry_point";
+                    $plugin_class = $plugin->name . 'Plugin';
+                    $obj = new $plugin_class();
+                    
+                    $plugins[$plugin->name] = $obj;
+                }
             }
             $this->cache->set('plugins', $plugins);
             $total_plugins = count($plugins);

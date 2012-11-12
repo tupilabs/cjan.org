@@ -11,6 +11,9 @@ class Home extends CJAN_Controller {
 	function index()	{
 	    $plugins = $this->pluginmanager->get_plugins();
 	    $helloworld_plugin = $plugins['helloworld'];
-		$this->load->view('home');
+	    $text = $helloworld_plugin->say_hello_world('Socrates');
+	    $data = array();
+	    $data['message'] = $text;
+		$this->load->view('home', $data);
 	}
 }
