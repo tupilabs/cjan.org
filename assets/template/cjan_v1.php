@@ -66,7 +66,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="{base_url}assets/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="{base_url}assets/js/cjan.js"></script>
 </body>
 </html>

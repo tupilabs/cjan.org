@@ -180,7 +180,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -356,6 +356,16 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
+
+/*
+|--------------------------------------------------------------------------
+| CJAN settings
+|--------------------------------------------------------------------------
+|
+| All settings to configure CJAN behaviour.
+ */
+$config['cjan'] = array();
+$config['cjan']['plugin_cache'] = 'application/cache';
 
 
 /* End of file config.php */
